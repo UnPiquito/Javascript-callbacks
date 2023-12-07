@@ -7,3 +7,14 @@
  * output:
  *  - empty array
  */
+
+/**
+ *
+ * @returns []
+ */
+
+const onError = () => {
+  return [];
+};
+
+export default onError;

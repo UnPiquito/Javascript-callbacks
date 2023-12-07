@@ -10,6 +10,24 @@
  * If random number is less than 0.5 or email is empty, then call onError callback
  * Otherwise, call onSuccess function
  *
- * output
+ *
  *  - string
  */
+
+/**
+ *
+ * @param {*} email
+ * @param {*} onError
+ * @param {*} onSuccess
+ * @returns string
+ */
+
+const createUser = (email, onError, onSuccess) => {
+  const randomNumber = Math.random();
+  if (randomNumber < 0.5 || email === "") {
+    return onError();
+  }
+  return onSuccess(email);
+};
+
+export default createUser;
