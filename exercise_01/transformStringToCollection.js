@@ -12,3 +12,21 @@
  * output
  *  - array
  */
+
+/**
+ *
+ * @param {*} value
+ * @param {*} onError
+ * @param {*} onSuccess
+ * @returns array
+ */
+
+const transformStringToArray = (value, onError, onSuccess) => {
+  if (value === "" || typeof value !== "string") {
+    return onError();
+  }
+  
+  return onSuccess(value);
+};
+
+export default transformStringToArray;

@@ -8,3 +8,16 @@
  * output:
  *  - array
  */
+
+/**
+ *
+ * @param {*} value
+ * @returns array
+ */
+
+const onSuccess = (value) => {
+  const stringArray = value.split(",");
+  return stringArray;
+};
+
+export default onSuccess;
