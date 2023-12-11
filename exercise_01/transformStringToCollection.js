@@ -25,6 +25,7 @@ const transformStringToArray = (value, onError, onSuccess) => {
   if (value === "" || typeof value !== "string") {
     return onError();
   }
+  
   return onSuccess(value);
 };
 
